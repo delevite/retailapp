@@ -9,13 +9,11 @@ interface Product {
   image: string;
 }
 
-const products: Product[] = [
-  { id: 1, title: 'Product 1', description: 'Description 1', price: 19.99, image: '/product1.jpg' },
-  { id: 2, title: 'Product 2', description: 'Description 2', price: 29.99, image: '/product2.jpg' },
-  { id: 3, title: 'Product 3', description: 'Description 3', price: 39.99, image: '/product3.jpg' },
-];
+interface ProductListProps {
+  products: Product[];
+}
 
-const ProductList: React.FC = () => {
+const ProductList: React.FC<ProductListProps> = ({ products }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {products.map((product) => (
