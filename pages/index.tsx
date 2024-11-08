@@ -36,11 +36,15 @@ export default function Home() {
 
       {/* Featured Products */}
       <h2 className="text-2xl font-bold mt-12">Featured Products</h2>
-      <ProductList products={featuredProducts} />
+      <div>
+        <ProductList products={featuredProducts} />
+      </div>
 
       {/* New Arrivals */}
       <h2 className="text-2xl font-bold mt-12">New Arrivals</h2>
-      <ProductList products={newArrivals} />
+      <div>
+        <ProductList products={newArrivals} />
+      </div>
 
       {/* Customer Testimonials */}
       <h2 className="text-2xl font-bold mt-12">Customer Testimonials</h2>
