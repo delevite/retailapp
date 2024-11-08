@@ -1,6 +1,12 @@
 import React from 'react';
+import Link from 'next/link';
 
-const NavBar: React.FC = () => {
+interface NavBarProps {
+  isAuthenticated: boolean;
+  handleLogout: () => void;
+}
+
+const NavBar: React.FC<NavBarProps> = ({ isAuthenticated, handleLogout }) => {
   return (
     <nav className="bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,7 +17,15 @@ const NavBar: React.FC = () => {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                {/* Navigation links here */}
+                <Link href="/">
+                  <a className="text-white hover:text-gray-300">Home</a>
+                </Link>
+                <Link href="/products">
+                  <a className="text-white hover:text-gray-300">Products</a>
+                </Link>
+                {isAuthenticated && (
+                  <button onClick={handleLogout} className="text-white hover:text-gray-300">Logout</button>
+                )}
               </div>
             </div>
           </div>
