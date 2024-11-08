@@ -18,10 +18,10 @@ const NavBar: React.FC<NavBarProps> = ({ isAuthenticated, handleLogout }) => {
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 <Link href="/">
-                  <a className="text-white hover:text-gray-300">Home</a>
+                  <span className="text-white hover:text-gray-300">Home</span>
                 </Link>
                 <Link href="/products">
-                  <a className="text-white hover:text-gray-300">Products</a>
+                  <span className="text-white hover:text-gray-300">Products</span>
                 </Link>
                 {isAuthenticated && (
                   <button onClick={handleLogout} className="text-white hover:text-gray-300">Logout</button>
