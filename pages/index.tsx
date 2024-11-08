@@ -49,8 +49,8 @@ export default function Home() {
       {/* Customer Testimonials */}
       <h2 className="text-2xl font-bold mt-12">Customer Testimonials</h2>
       <div className="mt-4">
-        <p>"Great products and excellent service!" - John Doe</p>
-        <p>"I love shopping here!" - Jane Doe</p>
+        <p>"Great products and excellent service!" - Paul Attah</p>
+        <p>"I love shopping here!" - Jane Paul</p>
       </div>
 
       {/* Newsletter Signup */}
