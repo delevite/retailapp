@@ -2,15 +2,27 @@ import React from 'react';
 
 const ProductCategories: React.FC = () => {
   return (
-    <section className="container mx-auto grid grid-cols-3 gap-4 mt-8">
-      <div className="bg-gray-100 p-6 rounded-lg">
-        <h2>Skincare</h2>
+    <section className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+      <div className="category-card bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="/path-to-skincare-image.jpg" alt="Skincare" className="w-full h-40 object-cover"/>
+        <div className="p-4">
+          <h2 className="text-xl font-bold">Skincare</h2>
+          <p className="mt-2 text-gray-600">Explore our range of skincare products designed to rejuvenate your skin.</p>
+        </div>
       </div>
-      <div className="bg-gray-100 p-6 rounded-lg">
-        <h2>Fitness</h2>
+      <div className="category-card bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="/path-to-fitness-image.jpg" alt="Fitness" className="w-full h-40 object-cover"/>
+        <div className="p-4">
+          <h2 className="text-xl font-bold">Fitness</h2>
+          <p className="mt-2 text-gray-600">Find the perfect fitness gear to help you achieve your goals.</p>
+        </div>
       </div>
-      <div className="bg-gray-100 p-6 rounded-lg">
-        <h2>Accessories</h2>
+      <div className="category-card bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="/path-to-accessories-image.jpg" alt="Accessories" className="w-full h-40 object-cover"/>
+        <div className="p-4">
+          <h2 className="text-xl font-bold">Accessories</h2>
+          <p className="mt-2 text-gray-600">Complete your look with our stylish accessories.</p>
+        </div>
       </div>
     </section>
   );
