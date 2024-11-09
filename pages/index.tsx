@@ -2,7 +2,7 @@ import NavBar from '../components/NavBar';
 import ProductList from './ProductList';
 import { Product } from '../types/Product';
 import HeroSection from '../components/HeroSection';
-import ProductCategories from '../components/ProductCategories';
+import Categories from '../components/Categories';
 import FeaturedProducts from '../components/FeaturedProducts';
 import Testimonials from '../components/Testimonials';
 import BlogSection from '../components/BlogSection';
@@ -24,7 +24,7 @@ export default function Home() {
     <div>
       <NavBar isAuthenticated={false} handleLogout={() => {}} />
       <HeroSection />
-      <ProductCategories />
+      <Categories />
       <FeaturedProducts products={featuredProducts} />
       <Testimonials />
       <BlogSection />

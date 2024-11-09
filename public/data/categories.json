@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Skincare",
+    "image": "/images/skincare-category.jpg",
+    "link": "/skincare"
+  },
+  {
+    "name": "Fitness",
+    "image": "/images/fitness-category.jpg",
+    "link": "/fitness"
+  },
+  {
+    "name": "Accessories",
+    "image": "/images/accessories-category.jpg",
+    "link": "/accessories"
+  }
+]
