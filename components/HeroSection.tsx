@@ -3,7 +3,7 @@ import React from 'react';
 const HeroSection: React.FC = () => {
   return (
     <section className="hero bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white">
-      <img src="/hero-image.jpg" alt="Promo Image" className="w-full h-64 object-cover"/>
+      <img src="/images/hero-image.jpg" alt="Promo Image" className="w-full h-64 object-cover"/>
       <div className="text-center p-8">
         <h1 className="text-4xl font-bold">Discover Excellence in Every Product</h1>
         <p className="mt-4 text-lg">Experience the best in skincare, fitness, and accessories designed to enhance your lifestyle.</p>
