@@ -19,16 +19,22 @@ const newArrivals: Product[] = [
   { id: 4, title: "New Arrival 2", name: "New Arrival 2", description: "Description 4", price: 49.99, image: "/product4.jpg" },
 ];
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
-      <NavBar isAuthenticated={false} handleLogout={() => {}} />
-      <HeroSection />
-      <Categories />
-      <FeaturedProducts products={featuredProducts} />
-      <Testimonials />
-      <BlogSection />
-      <Footer />
+      <header>
+        <NavBar isAuthenticated={false} handleLogout={() => {}} />
+      </header>
+      <main>
+        <HeroSection />
+        <Categories />
+        <FeaturedProducts products={featuredProducts} />
+        <Testimonials />
+        <BlogSection />
+        <Footer />
+      </main>
     </div>
   );
-}
+};
+
+export default Home;

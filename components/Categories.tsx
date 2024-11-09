@@ -1,7 +1,14 @@
 import { useEffect, useState } from 'react';
+import { Category } from '../types/Category';
+
+interface Category {
+  name: string;
+  image: string;
+  link: string;
+}
 
 const Categories = () => {
-  const [categories, setCategories] = useState([]);
+  const [categories, setCategories] = useState<Category[]>([]);
 
   useEffect(() => {
     fetch('/data/categories.json')
